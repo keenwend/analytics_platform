@@ -1,0 +1,6 @@
+CREATE SCHEMA raw;
+CREATE SCHEMA staging;
+CREATE SCHEMA mart;
+
+CREATE DATABASE airflow;
+CREATE DATABASE superset;
