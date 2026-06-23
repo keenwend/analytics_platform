@@ -1,0 +1,13 @@
+database_name: analytics
+sqlalchemy_uri: postgresql+psycopg2://admin:XXXXXXXXXX@postgres:5432/analytics
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+uuid: 1294550c-4991-4e56-862b-0e8e39aba77b
+version: 1.0.0

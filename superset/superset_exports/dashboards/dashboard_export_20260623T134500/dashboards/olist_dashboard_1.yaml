@@ -1,0 +1,307 @@
+dashboard_title: olist_dashboard
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 3eb5791c-bb5b-497a-b884-9ef221d0707a
+position:
+  CHART-AOJLabbDnX0:
+    children: []
+    id: CHART-AOJLabbDnX0
+    meta:
+      chartId: 2
+      height: 31
+      sliceName: revenue_by_dt
+      uuid: a80fa6e5-eac8-497c-957f-f4671f965359
+      width: 12
+    parents:
+    - ROOT_ID
+    - TAB-fCf6PYBEn2y
+    - ROW-dK5KpHFhv7z
+    type: CHART
+  CHART-Eytt-2-wG_C:
+    children: []
+    id: CHART-Eytt-2-wG_C
+    meta:
+      chartId: 3
+      height: 34
+      sliceName: orders_by_dt
+      uuid: c7413b4c-b4f7-4a9f-b323-56e077d61ba8
+      width: 12
+    parents:
+    - ROOT_ID
+    - TAB-fCf6PYBEn2y
+    - ROW-dK5KpHFhv7z
+    type: CHART
+  CHART-QVRPTuqdo1P:
+    children: []
+    id: CHART-QVRPTuqdo1P
+    meta:
+      chartId: 1
+      height: 89
+      sliceName: performance_by_seller
+      uuid: 5f2fd516-b390-4b27-8bbc-798a64d67d97
+      width: 12
+    parents:
+    - ROOT_ID
+    - TABS-s3k6SOZ_75o
+    - TAB-BUrw5CiAaw
+    - ROW-V4GkG11e6d7
+    type: CHART
+  CHART-dNzkNfQC-Hz:
+    children: []
+    id: CHART-dNzkNfQC-Hz
+    meta:
+      chartId: 4
+      height: 34
+      sliceName: gmv_by_dt
+      uuid: 86417f9f-0c21-4ce5-ab4a-7c8dc2e9a804
+      width: 12
+    parents:
+    - ROOT_ID
+    - TAB-fCf6PYBEn2y
+    - ROW-usSgKaQ7tIZ
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children: []
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: olist_dashboard
+    type: HEADER
+  ROOT_ID:
+    children:
+    - TABS-s3k6SOZ_75o
+    id: ROOT_ID
+    type: ROOT
+  ROW-V4GkG11e6d7:
+    children:
+    - CHART-QVRPTuqdo1P
+    id: ROW-V4GkG11e6d7
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TABS-s3k6SOZ_75o
+    - TAB-BUrw5CiAaw
+    type: ROW
+  ROW-dK5KpHFhv7z:
+    children:
+    - CHART-AOJLabbDnX0
+    id: ROW-dK5KpHFhv7z
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TAB-fCf6PYBEn2y
+    type: ROW
+  ROW-ku6TKFxCnI:
+    children:
+    - CHART-Eytt-2-wG_C
+    id: ROW-ku6TKFxCnI
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TAB-fCf6PYBEn2y
+    type: ROW
+  ROW-usSgKaQ7tIZ:
+    children:
+    - CHART-dNzkNfQC-Hz
+    id: ROW-usSgKaQ7tIZ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - TAB-fCf6PYBEn2y
+    type: ROW
+  TAB-BUrw5CiAaw:
+    children:
+    - ROW-V4GkG11e6d7
+    id: TAB-BUrw5CiAaw
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: performance by seller
+    parents:
+    - ROOT_ID
+    - TABS-s3k6SOZ_75o
+    type: TAB
+  TAB-fCf6PYBEn2y:
+    children:
+    - ROW-dK5KpHFhv7z
+    - ROW-ku6TKFxCnI
+    - ROW-usSgKaQ7tIZ
+    id: TAB-fCf6PYBEn2y
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: metrics
+    parents:
+    - ROOT_ID
+    type: TAB
+  TABS-s3k6SOZ_75o:
+    children:
+    - TAB-fCf6PYBEn2y
+    - TAB-BUrw5CiAaw
+    id: TABS-s3k6SOZ_75o
+    meta: {}
+    parents:
+    - ROOT_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '1':
+      id: 1
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 3
+        - 4
+    '2':
+      id: 2
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 3
+        - 4
+    '3':
+      id: 3
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 4
+    '4':
+      id: 4
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 3
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 1
+    - 2
+    - 3
+    - 4
+  color_scheme: ''
+  refresh_frequency: 0
+  shared_label_colors:
+    SUM(revenue): '#1FA8C9'
+    SUM(orders_count): '#454E7C'
+    SUM(gmv): '#5AC189'
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER--U-DMI08Vw
+    controlValues:
+      enableEmptyFilter: false
+    name: time grain
+    filterType: filter_timegrain
+    targets:
+    - datasetUuid: b0c3af01-25fc-4031-9440-776cb3b9663f
+    defaultDataMask:
+      extraFormData:
+        time_grain_sqla: P1M
+      filterState:
+        label: Month
+        value:
+        - P1M
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - TAB-fCf6PYBEn2y
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 1
+    - 2
+    - 3
+    - 4
+    tabsInScope:
+    - TAB-fCf6PYBEn2y
+    - TAB-BUrw5CiAaw
+  - id: NATIVE_FILTER-aT8qJ_7HBP
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: order status
+    filterType: filter_select
+    targets:
+    - column:
+        name: order_status
+      datasetUuid: b0c3af01-25fc-4031-9440-776cb3b9663f
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 1
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 2
+    - 3
+    - 4
+    tabsInScope:
+    - TAB-fCf6PYBEn2y
+  - id: NATIVE_FILTER-DEy4nX8tvU
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: seller id
+    filterType: filter_select
+    targets:
+    - column:
+        name: seller_id
+      datasetUuid: 0b171289-8955-4a82-932e-5bf18e8d82c9
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 2
+      - 3
+      - 4
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 1
+    tabsInScope:
+    - TAB-BUrw5CiAaw
+version: 1.0.0
